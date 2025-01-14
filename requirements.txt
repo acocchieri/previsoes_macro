@@ -1,0 +1,7 @@
+fastparquet==2024.5.0
+mizani==0.11.4
+pandas==2.2.2
+plotnine==0.13.6
+pyarrow==17.0.0
+shiny==1.0.0
+shinyswatch==0.7.0

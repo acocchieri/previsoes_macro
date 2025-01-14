@@ -1,7 +1,7 @@
 
 # Retenta ler um CSV se falhar download
 def ler_csv(*args, **kwargs):
-  max_tentativas = 5
+  max_tentativas = 15
   intervalo = 2
   tentativas = 0
   while tentativas < max_tentativas:
