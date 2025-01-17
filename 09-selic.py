@@ -174,7 +174,7 @@ dados_cenario_inflacao_hiato = (
     .ffill()
     .query("index >= @periodo_previsao.min()")
     .drop("data", axis = "columns")
-    .join(other = dados_tratados.filter(["meta_inflacao"]), how = "left")
+    .join(other = dados_tratados.filter(["meta_inflacao"]).ffill(), how = "left")
     .ffill()
     .assign(inflacao_hiato = lambda x: x.expec_ipca_12m - x.meta_inflacao.shift(-h))
     .query("index <= @periodo_previsao.max()")
