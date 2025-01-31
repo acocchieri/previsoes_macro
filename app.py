@@ -70,7 +70,7 @@ df_selic = preparar_dados("previsao/selic.parquet", "Selic")
 ui.page_opts(
     title = ui.span(
         ui.img(
-            src = "https://aluno.analisemacro.com.br/download/59787/?tmstv=1712933415",
+            src = "https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_Senado_Federal_Brasil.png",
             height = 30,
             style = "padding-right:10px;"
             )
